@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      /* Basic button styling */
+      body {
+        background-color: black;
+      }
+      .btn {
+        display: inline-block;
+        position: relative;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        overflow: hidden;
+        background: linear-gradient(45deg, #333, #fff);
+        transition: background 0.3s ease, color 0.3s ease;
+      }
+
+      /* Button hover animation */
+      .btn::before {
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: #fff;
+        transition: width 0.3s ease;
+      }
+
+      .btn:hover {
+        background: linear-gradient(45deg, #2980b9, #9b59b6);
+        color: #fff;
+      }
+
+      .btn:hover::before {
+        width: 100%;
+      }
+
+      .btn::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.1);
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        z-index: -1;
+      }
+
+      .btn:hover::after {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#" class="btn">Hover me</a>
+  </body>
+</html>
