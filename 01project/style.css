@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  /* background-color: burlywood; */
+  font-family: Josefin Sans;
+  background-color: white;
 }
 .nav-bar {
   display: flex;
@@ -28,6 +29,8 @@ body {
 ul li a {
   text-decoration: none;
   color: black;
+  font-family: Josefin Sans;
+  font-size: 20px;
 }
 .nav-li a {
   display: flex;
@@ -61,10 +64,10 @@ h1 {
   font-size: 39px;
   font-weight: 900;
   line-height: 50px;
-  font-family: merriweather;
+  font-family: Josefin Sans;
 }
 p {
-  font-size: 19px;
+  font-size: 20px;
 }
 .text-1 {
   margin: 100px 0 0 0px;
@@ -142,6 +145,7 @@ h2 {
   padding-bottom: 30px;
   padding-left: 25px;
   text-align: center;
+  font-family: Josefin Sans;
 }
 .stock-img-container {
   width: 100%;
@@ -183,6 +187,8 @@ h2 {
   line-height: 1.2;
   padding-bottom: 10px;
   margin: 0;
+  padding-left: 0;
+  text-align: start;
 }
 .card-contain {
   padding: 10px 15px 15px;
@@ -224,11 +230,7 @@ a {
 .music-img {
   border-radius: 20px;
 }
-.new-abc {
-  position: absolute;
-  top: 56.5%;
-  left: -1%;
-}
+
 .poster {
   width: 30%;
   background-color: #eee;
@@ -348,6 +350,7 @@ a {
 }
 .info h2 {
   padding-bottom: 0;
+  text-align: start;
 }
 .info p {
   padding-left: 25px;
@@ -359,6 +362,7 @@ a {
 }
 .contact-label {
   font-size: 40px;
+  font-family: Josefin Sans;
 }
 #contact-input {
   outline: 2px solid white;
@@ -660,4 +664,10 @@ footer {
 
 .btn:hover::after {
   transform: translateY(0);
+}
+.rights {
+  font-family: Josefin Sans;
+}
+.footer-links a {
+  font-family: Josefin Sans;
 }
