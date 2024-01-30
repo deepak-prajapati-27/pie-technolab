@@ -48,16 +48,21 @@
         <li class="nav-li" onclick="dropDown()">
           <a href="#">Home <i class="fa-solid fa-caret-down"></i></a>
           <ul id="sub-menu">
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
+            <li><a href="#">Web App Development</a></li>
+            <li><a href="#">Mobile App Development</a></li>
+            <li><a href="#">E-commerce Development</a></li>
+            <li><a href="#">MVP Development Services</a></li>
+            <li><a href="#">Quality Assurance and Testing</a></li>
+            <li><a href="#">BI Consulting</a></li>
           </ul>
         </li>
         <li><a href="">Blog</a></li>
         <li><a href="">Career</a></li>
         <li><a href="">ContactUs</a></li>
       </ul>
+      <a href="#" onclick="darkMode()">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </a>
     </nav>
     <div class="container container-1">
       <div class="text-1">
@@ -592,6 +597,19 @@
           document.getElementById("sub-menu").style.display = "none";
         }
         a = !a;
+      }
+    </script>
+    <script>
+      function darkMode() {
+        if (document.querySelector("body").style.backgroundColor !== "black") {
+          document.querySelector("body").style.backgroundColor = "black";
+          // document.querySelector("h1").style.color = "white";
+          // document.querySelector("h2").style.color = "white";
+          // document.querySelector("h3").style.color = "white";
+          // document.querySelector("p").style.color = "white";
+        } else {
+          document.querySelector("body").style.backgroundColor = "white";
+        }
       }
     </script>
   </body>
