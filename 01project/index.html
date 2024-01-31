@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>pie technolab</title>
     <!-- bootstrap css  -->
     <!-- <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -41,12 +41,11 @@
         /></a>
       </div>
       <ul class="div-ul">
-        <li><a href="">Home</a></li>
-        <li><a href="">AboutUs</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Services</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">AboutUs</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li class="nav-li" onclick="dropDown()">
-          <a href="#">Home <i class="fa-solid fa-caret-down"></i></a>
+          <a href="#">Service <i class="fa-solid fa-caret-down"></i></a>
           <ul id="sub-menu">
             <li><a href="#">Web App Development</a></li>
             <li><a href="#">Mobile App Development</a></li>
@@ -57,8 +56,8 @@
           </ul>
         </li>
         <li><a href="">Blog</a></li>
-        <li><a href="">Career</a></li>
-        <li><a href="">ContactUs</a></li>
+        <li><a href="career.html">Career</a></li>
+        <li><a href="contact_us.html">ContactUs</a></li>
       </ul>
       <a href="#" onclick="darkMode()">
         <i class="fa-solid fa-circle-half-stroke"></i>
@@ -515,7 +514,11 @@
         <div class="footer-socials">
           <a href="" class="footer-a"><i class="fa-brands fa-linkedin"></i></a>
           <a href="" class="footer-a"><i class="fa-brands fa-twitter"></i></a>
-          <a href="" class="footer-a"><i class="fa-brands fa-instagram"></i></a>
+          <a
+            href="https://www.instagram.com/pietechnolab?igsh=MTRhazFqd3V5MWRuOQ=="
+            class="footer-a"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
           <a href="" class="footer-a"><i class="fa-brands fa-facebook"></i></a>
         </div>
         <p class="rights">All Rights Reserved at Pie Technolab Pvt. Ltd.</p>
@@ -603,12 +606,14 @@
       function darkMode() {
         if (document.querySelector("body").style.backgroundColor !== "black") {
           document.querySelector("body").style.backgroundColor = "black";
-          // document.querySelector("h1").style.color = "white";
-          // document.querySelector("h2").style.color = "white";
-          // document.querySelector("h3").style.color = "white";
-          // document.querySelector("p").style.color = "white";
+          document.querySelector("h1").style.color = "white";
+          document.querySelectorAll("h2").style.color = "white";
+          document.querySelector("h3").style.color = "white";
+          document.querySelector("p").style.color = "white";
         } else {
           document.querySelector("body").style.backgroundColor = "white";
+          document.querySelector("h1").style.color = "black";
+          document.querySelector("p").style.color = "black";
         }
       }
     </script>
