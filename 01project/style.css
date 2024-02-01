@@ -735,3 +735,66 @@ footer {
 .ap-blog {
   width: 210px;
 }
+.single-blog-wrapper {
+  display: flex;
+  width: 48%;
+  gap: 20px;
+  box-shadow: 0px 0rem 1rem 5px rgb(15 14 14 / 14%);
+}
+.blog-img {
+  width: 50%;
+}
+img {
+  width: 100%;
+}
+.blog-contain {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-evenly;
+  /* background-color: #6962ad; */
+}
+.blog-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.blog-contain h3 {
+  font-size: 21px;
+  font-weight: 800;
+}
+.blog-i i {
+  font-size: 10px;
+}
+.blog-i p {
+  font-size: 12px;
+}
+
+/* privacy policy css  */
+
+.pp-contain {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.pp-contain h2 {
+  text-align: start;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* terms and condition css  */
+.tc-ul li {
+  list-style-type: disc;
+  color: black;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.tc-ul {
+  padding-left: 50px;
+}
+.tc-contain h3 {
+  color: black;
+  text-decoration: underline;
+}
