@@ -32,10 +32,6 @@ body {
   list-style-type: none;
   gap: 40px;
 }
-/* .div-ul a {
-  width: 100px;
-  display: inline-block;
-} */
 ul li a {
   text-decoration: none;
   color: black;
@@ -67,6 +63,7 @@ ul li a {
 }
 .banner-1 {
   width: 100%;
+  mix-blend-mode: multiply;
 }
 h1 {
   font-size: 39px;
